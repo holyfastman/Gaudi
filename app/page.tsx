@@ -169,8 +169,10 @@ export default function Home() {
             <p>Расскажите, где находится объект и на какой стадии проект. Александр лично подключится к первому обсуждению.</p>
             <a className="contact-phone" href={phoneHref}>{phoneDisplay}</a>
             <div className="contact-actions">
-              <a className="button button-gold" href={phoneHref}>Позвонить <span>↗</span></a>
-              <a className="button button-outline" href="https://wa.me/79684181188">Написать в WhatsApp <span>↗</span></a>
+              <a className="button button-gold contact-call" href={phoneHref}>Позвонить <span>↗</span></a>
+              <a className="button button-outline" href="https://wa.me/79684181188" target="_blank" rel="noreferrer">WhatsApp <span>↗</span></a>
+              <a className="button button-outline" href="https://t.me/AleksLagutin" target="_blank" rel="noreferrer">Telegram <span>↗</span></a>
+              <a className="button button-outline" href="https://max.ru/u/f9LHodD0cOIytiaLDWfH_XbHlLGTyRA_OA1HSCVvrTcCYnf2NennLkccKow" target="_blank" rel="noreferrer">MAX <span>↗</span></a>
             </div>
           </div>
         </div>
