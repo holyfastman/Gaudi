@@ -209,7 +209,9 @@ h2 { font-size: clamp(48px, 6vw, 94px); line-height: .98; }
 .contact-card { max-width: 600px; padding: 45px 0 0 5vw; border-left: 1px solid var(--line-dark); }
 .contact-card > p { margin: 0 0 36px; color: #aaa79f; line-height: 1.7; }
 .contact-phone { display: block; margin-bottom: 38px; font-family: Georgia, serif; font-size: clamp(30px, 3vw, 48px); color: var(--gold-light); }
-.contact-actions { display: flex; gap: 12px; }
+.contact-actions { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.contact-actions .button { min-width: 0; gap: 12px; }
+.contact-call { grid-column: 1 / -1; }
 .button-outline { border: 1px solid rgba(255,255,255,.25); color: #d8d4cb; }
 footer { background: var(--ink); color: var(--paper); border-top: 1px solid var(--line-dark); }
 .footer-inner { min-height: 130px; display: grid; grid-template-columns: 1fr 1fr 1fr; align-items: center; }
@@ -274,7 +276,8 @@ footer { background: var(--ink); color: var(--paper); border-top: 1px solid var(
   .place-names span::after { display: none; }
   .faq-list summary { min-height: 80px; font-size: 18px; }
   .contact { padding: 100px 0 84px; }
-  .contact-actions { flex-direction: column; }
+  .contact-actions { grid-template-columns: 1fr; }
+  .contact-call { grid-column: auto; }
   .footer-inner { min-height: 210px; grid-template-columns: 1fr; justify-items: start; padding: 35px 0; }
   .footer-inner > p, .footer-inner > p:last-child { text-align: left; }
 }
