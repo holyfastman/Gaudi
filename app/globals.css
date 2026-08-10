@@ -118,7 +118,7 @@ h1 em, h2 em { color: var(--gold-light); font-weight: 400; }
   padding: 0 0 80px 42px;
   background:
     linear-gradient(90deg, rgba(18,19,17,.42), rgba(18,19,17,.06)),
-    url('/images/gaudi-hero.png') 56% center / cover no-repeat;
+    url('/images/gaudi-hero-1600.webp') 56% center / cover no-repeat;
 }
 .stage-line { position: absolute; top: 12%; bottom: 12%; left: 50%; width: 1px; background: linear-gradient(transparent, rgba(185,152,97,.8), transparent); transform: rotate(18deg); }
 .stage-number { position: absolute; top: 16%; right: 8%; color: var(--gold-light); font-family: Georgia, serif; font-size: 15px; }

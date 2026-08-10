@@ -64,7 +64,17 @@ export default function Home() {
 
       <section className="visual-story" aria-label="Эстетика Gaudi">
         <div className="visual-story-image">
-          <img src="/images/gaudi-project.png" alt="Концептуальный образ премиального интерьера в эстетике Gaudi" />
+          <img
+            src="/images/gaudi-project-1120.webp"
+            srcSet="/images/gaudi-project-768.webp 768w, /images/gaudi-project-1120.webp 1120w"
+            sizes="(max-width: 900px) 100vw, 58vw"
+            width={1120}
+            height={1400}
+            loading="lazy"
+            decoding="async"
+            fetchPriority="low"
+            alt="Концептуальный образ премиального интерьера в эстетике Gaudi"
+          />
         </div>
         <div className="visual-story-copy">
           <p className="section-index">Пространство без компромиссов</p>
@@ -93,7 +103,17 @@ export default function Home() {
       <section className="craft section">
         <div className="shell craft-grid">
           <div className="craft-image">
-            <img src="/images/gaudi-detail.png" alt="Деталь отделки: натуральный камень, латунь и тёмный дуб" />
+            <img
+              src="/images/gaudi-detail-1440.webp"
+              srcSet="/images/gaudi-detail-768.webp 768w, /images/gaudi-detail-1440.webp 1440w"
+              sizes="(max-width: 900px) 100vw, 50vw"
+              width={1440}
+              height={960}
+              loading="lazy"
+              decoding="async"
+              fetchPriority="low"
+              alt="Деталь отделки: натуральный камень, латунь и тёмный дуб"
+            />
             <span>Точность примыканий · чистота геометрии</span>
           </div>
           <div className="craft-copy">
