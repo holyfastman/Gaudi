@@ -1,52 +1,12 @@
+import { GaudiScrollHero } from "@/components/blocks/gaudi-scroll-hero";
+
 const phoneDisplay = "+7 968 418-11-88";
 const phoneHref = "tel:+79684181188";
 
 export default function Home() {
   return (
     <main>
-      <section className="hero" id="top">
-        <nav className="nav shell" aria-label="Главная навигация">
-          <a className="brand" href="#top" aria-label="Gaudi — на главную">
-            <span className="brand-mark">GAUDI</span>
-            <span className="brand-caption">premium renovation</span>
-          </a>
-          <div className="nav-links">
-            <a href="#approach">Подход</a>
-            <a href="#services">Услуги</a>
-            <a href="#process">Процесс</a>
-            <a href="#contact">Контакты</a>
-          </div>
-          <a className="nav-phone" href={phoneHref}>{phoneDisplay}</a>
-        </nav>
-
-        <div className="hero-grid shell">
-          <div className="hero-copy">
-            <p className="eyebrow"><span /> Москва · ремонт премиум-класса</p>
-            <h1>Формируем<br /><em>интерьер.</em></h1>
-            <p className="hero-lead">
-              Реализуем сложные частные интерьеры под ключ — от инженерной
-              подготовки до безупречной финишной отделки.
-            </p>
-            <div className="hero-actions">
-              <a className="button button-gold" href="#contact">Обсудить проект <span>↗</span></a>
-              <a className="text-link" href="#approach">Как мы работаем <span>↓</span></a>
-            </div>
-          </div>
-
-          <div className="hero-stage" aria-label="Архитектурная композиция">
-            <div className="stage-line" />
-            <div className="stage-number">01</div>
-            <p>Архитектура<br />исполнения</p>
-            <div className="stage-monogram">G</div>
-          </div>
-        </div>
-
-        <div className="hero-facts shell" aria-label="Ключевые параметры">
-          <div><strong>200 000 ₽/м²</strong><span>ориентир бюджета реализации</span></div>
-          <div><strong>1 команда</strong><span>от инженерии до чистовой отделки</span></div>
-          <div><strong>100% контроль</strong><span>каждого скрытого этапа работ</span></div>
-        </div>
-      </section>
+      <GaudiScrollHero phoneDisplay={phoneDisplay} phoneHref={phoneHref} />
 
       <section className="manifesto section" id="approach">
         <div className="shell manifesto-grid">
@@ -66,10 +26,8 @@ export default function Home() {
         <div className="visual-story-image">
           <img
             src="/images/gaudi-project-1120.webp"
-            srcSet="/images/gaudi-project-768.webp 768w, /images/gaudi-project-1120.webp 1120w"
-            sizes="(max-width: 900px) 100vw, 58vw"
-            width={1120}
-            height={1400}
+            width={1122}
+            height={1402}
             loading="lazy"
             decoding="async"
             fetchPriority="low"
@@ -105,10 +63,8 @@ export default function Home() {
           <div className="craft-image">
             <img
               src="/images/gaudi-detail-1440.webp"
-              srcSet="/images/gaudi-detail-768.webp 768w, /images/gaudi-detail-1440.webp 1440w"
-              sizes="(max-width: 900px) 100vw, 50vw"
-              width={1440}
-              height={960}
+              width={1536}
+              height={1024}
               loading="lazy"
               decoding="async"
               fetchPriority="low"
