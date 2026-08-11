@@ -1,5 +1,6 @@
 import { GaudiScrollHero } from "@/components/blocks/gaudi-scroll-hero";
 import { DemoOne } from "@/components/blocks/interactive-selector-demo";
+import YouCanScrollDemo from "@/components/blocks/you-can-scroll-demo";
 
 const phoneDisplay = "+7 968 418-11-88";
 const phoneHref = "tel:+79684181188";
@@ -19,6 +20,23 @@ export default function Home() {
               дисциплины процессов. Мы выстраиваем объект как управляемую
               систему: планируем, фиксируем, проверяем и отвечаем за результат.
             </p>
+            <div className="approach-actions">
+              <a className="button button-gold" href="#contact">
+                Обсудить проект <span>↗</span>
+              </a>
+              <a className="text-link" href="#faq">
+                Как мы работаем <span>↓</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="places" aria-label="Объекты высокого уровня">
+        <div className="shell places-inner">
+          <p>Опыт работы с объектами высокого уровня</p>
+          <div className="place-names">
+            <span>Лаврушинский</span><span>Prime Park</span><span>Золотой квартал</span><span>Lion Gate</span>
           </div>
         </div>
       </section>
@@ -44,22 +62,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="services section" id="services">
-        <div className="shell">
-          <div className="section-heading">
-            <p className="section-index">02 — компетенции</p>
-            <h2>Весь объект.<br /><em>Одна ответственность.</em></h2>
-          </div>
-          <div className="service-list">
-            <article><span>01</span><h3>Подготовка объекта</h3><p>Приёмка, мобилизация, защита поверхностей, временные сети и логистика.</p></article>
-            <article><span>02</span><h3>Инженерные системы</h3><p>Электрика, слаботочные системы, водоснабжение, вентиляция и кондиционирование.</p></article>
-            <article><span>03</span><h3>Общестроительные работы</h3><p>Перегородки, штукатурка, стяжка, гидроизоляция и подготовка всех оснований.</p></article>
-            <article><span>04</span><h3>Чистовая отделка</h3><p>Малярные работы, камень, мозаика, паркет, столярные изделия и сложные узлы.</p></article>
-            <article><span>05</span><h3>Комплектация</h3><p>Планирование поставок, приёмка материалов, бережное хранение и координация смежников.</p></article>
-            <article><span>06</span><h3>Сдача и сопровождение</h3><p>Пусконаладка, финальная проверка, исполнительная документация и передача объекта.</p></article>
-          </div>
-        </div>
-      </section>
+      <YouCanScrollDemo />
 
       <section className="craft section">
         <div className="shell craft-grid">
@@ -115,16 +118,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="places">
-        <div className="shell places-inner">
-          <p>Опыт работы с объектами высокого уровня</p>
-          <div className="place-names">
-            <span>Лаврушинский</span><span>Prime Park</span><span>Золотой квартал</span><span>Lion Gate</span>
-          </div>
-        </div>
-      </section>
-
-      <section className="faq section" aria-label="Частые вопросы">
+      <section className="faq section" id="faq" aria-label="Частые вопросы">
         <div className="shell faq-grid">
           <div>
             <p className="section-index">05 — главное до старта</p>

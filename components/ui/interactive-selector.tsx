@@ -54,7 +54,7 @@ export default function InteractiveSelector() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section className="interactive-selector" aria-labelledby="selector-heading">
+    <section className="interactive-selector" id="services" aria-labelledby="selector-heading">
       <div className="shell interactive-selector-inner">
         <header className="interactive-selector-heading">
           <div>
