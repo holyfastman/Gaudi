@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist } from "next/font/google";
 import "./globals.css";
 
@@ -12,6 +12,12 @@ export const metadata: Metadata = {
   description: "Реализация частных интерьеров премиум-класса под ключ в Москве. Инженерные системы, отделка и контроль качества.",
   other: { "codex-preview": "development" },
   icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
