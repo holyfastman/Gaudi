@@ -1,4 +1,5 @@
 import { GaudiScrollHero } from "@/components/blocks/gaudi-scroll-hero";
+import { DemoOne } from "@/components/blocks/interactive-selector-demo";
 
 const phoneDisplay = "+7 968 418-11-88";
 const phoneHref = "tel:+79684181188";
@@ -21,6 +22,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <DemoOne />
 
       <section className="visual-story" aria-label="Эстетика Gaudi">
         <div className="visual-story-image">
